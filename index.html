@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>我想回家-好眠</title> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>	
+
+<script>
+ function Mos(){
+        var to = parseInt($('#total').val());
+        to +=1;
+        $('#total').val(to);
+        if(to%5 == 0 ){ zlight(); }
+    }
+        
+function  zlight(){
+    var zlight = parseInt($('#zlight_to').val());
+    zlight +=1 ;
+        
+    if(zlight<6){
+        $('#zlight_to').val(zlight);
+        $('#zdark'+zlight).hide();
+        $('#zlight'+zlight).show();
+        
+    }else{
+        $('#zlight_to').val(0);
+        $('#zlight1').hide();
+        $('#zdark1').show();
+        $('#zlight2').hide();
+        $('#zdark2').show();
+        $('#zlight3').hide();
+        $('#zdark3').show();
+        $('#zlight4').hide();
+        $('#zdark4').show();
+        $('#zlight5').hide();
+        $('#zdark5').show();
+        myFunc01();
+
+    }
+}      
+
+</script>
+	<style type="text/css">
+	
+		.url_1{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:10%;
+    		  	top:50%;
+    	}	
+    	
+    	.url_2{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:13%;
+    		  	top:70%;
+    	}	
+    	
+    	.url_3{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:20%;
+    		  	top:60%;
+    	}	
+
+		.url_4{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:27%;
+    		  	top:50%;
+    	}	
+    	
+    	.url_5{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:35%;
+    		  	top:55%;
+    	}	
+    	
+    	.url_6{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:29%;
+    		  	top:65%;
+    	}	
+    	
+		.url_7{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:56%;
+    		  	top:55%;
+    	}	
+    	
+    	.url_8{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:70%;
+    		  	top:63%;
+    	}	
+    	
+    	.url_9{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:66%;
+    		  	top:52%;
+    	}	
+		
+		.url_10{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:62%;
+    		  	top:63%;
+    	}	
+    	
+    	.url_11{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:79%;
+    		  	top:70%;
+    	}	
+    	
+    	.url_12{
+    		  	position: absolute;
+    		  	width: 5%;
+    		  	left:83%;
+    		  	top:50%;
+    	}	
+    	
+    	.coutinue{
+    	    position: absolute;
+    	    top:3%;
+    	    left:87%;
+    	    width: 40px;
+    	}
+    	
+    	.z_1{
+    	    position: absolute;
+    	    width: 10%;
+    	    top:66%;
+    	    left:43%;
+    	}
+    	.z_2{
+    	    position: absolute;
+    	    width: 10%;
+    	    top:57%;
+    	    left:45%;
+    	}
+    	.z_3{
+    	    position: absolute;
+    	    width: 10%;
+    	    top:49%;
+    	    left:43%;
+    	}
+    	.z_4{
+    	    position: absolute;
+    	    width: 10%;
+    	    top:40%;
+    	    left:45%;
+    	}
+    	.z_5{
+    	    position: absolute;
+    	    width: 10%;
+    	    top:31%;
+    	    left:42%;
+    	}
+
+    	
+	</style>
+</head> 
+<body> 
+
+<div data-role="content" width="100%">	
+
+		<img src="S__3170332.jpg" width="100%" height="auto"/>
+		<input value="0" id="total" style="display:none;"/>
+		<input value="0" id="zlight_to" style="display:none;"/>
+		<a onclick="Mos()" id="Mosquito1"  ><img src="01.png"  class="url_1"/></a>
+		<a onclick="Mos()" id="Mosquito2"  ><img src="01.png"  class="url_2"/></a>
+		<a onclick="Mos()" id="Mosquito3"  ><img src="01.png"  class="url_3"/></a>
+		<a onclick="Mos()" id="Mosquito4"  ><img src="01.png"  class="url_4"/></a>
+		<a onclick="Mos()" id="Mosquito5"  ><img src="01.png"  class="url_5"/></a>
+		<a onclick="Mos()" id="Mosquito6"  ><img src="01.png"  class="url_6"/></a>
+		
+		<a onclick="Mos()" id="Mosquito7"   ><img src="01.png"  class="url_7"/></a>
+		<a onclick="Mos()" id="Mosquito8"   ><img src="01.png"  class="url_8"/></a>
+		<a onclick="Mos()" id="Mosquito9"  ><img src="01.png"  class="url_9"/></a>
+		<a onclick="Mos()" id="Mosquito10" ><img src="01.png"  class="url_10"/></a>
+		<a onclick="Mos()" id="Mosquito11"  ><img src="01.png"  class="url_11"/></a>
+		<a onclick="Mos()" id="Mosquito12"  ><img src="01.png"  class="url_12"/></a>
+		
+		<img src="02.png" id="zlight1"  class="z_1"/>
+		<img src="03.png" id="zdark1" class="z_1"/>
+		<img src="02.png" id="zlight2" class="z_2"/>
+		<img src="03.png" id="zdark2" class="z_2"/>
+		<img src="02.png" id="zlight3" class="z_3"/>
+		<img src="03.png" id="zdark3" class="z_3"/>
+		<img src="02.png" id="zlight4" class="z_4"/>
+		<img src="03.png" id="zdark4" class="z_4"/>
+		<img src="02.png" id="zlight5" class="z_5"/>
+		<img src="03.png" id="zdark5" class="z_5"/>
+</div><!-- /content -->
+
+<script  language="javascript"  defer="defer" >
+
+var myFunc01 = function() {
+  var i = 1;
+  while (i<=250) {
+    (function(i) {
+            var a =  Math.floor(Math.random() * 12);
+            setTimeout(function() { $("#Mosquito"+a).show(); }, 1000 * i)
+            setTimeout(function() { $("#Mosquito"+a).hide(); }, 1000 * (i+1))
+        })(i++)
+    }
+    //alert("請按繼續！");
+ };
+
+		$(document).ready(function(){
+		    var a =1;
+		    while(a<=12){
+		         (function(i) {$("#Mosquito"+a).hide();})(a++)
+		    }
+		    
+		    a =1;
+		     while(a<=5){
+		         (function(i) {$("#zlight"+a).hide();})(a++)
+		    }
+		    
+		    myFunc01();
+        });
+        
+                   
+	</script>
+
+
+</body>
+</html>
